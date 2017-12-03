@@ -12,6 +12,10 @@ html {
   background-color: whitesmoke;
 }
 
+a {
+  color: inherit;
+}
+
 /* Body */
 
 body {
