@@ -95,12 +95,25 @@ article li::before {
   margin-right: 1rem;
 }
 
-/* Progression & Roadmap */
+/* Progressbar */
 
-article progress {
-  width: 100%;
-  display: block;
+.progressbar {
+    height: 1rem;
+    border: 1px solid #EEE;
+    border-radius: 1rem;
+    padding: 1px;
+    box-sizing: border-box;
+    margin-top: -5px;
 }
+
+.progressbar span {
+    height: 100%;
+    background-color: #2ba84a;
+    display: block;
+    border-radius: 1rem;
+}
+
+/* Roadmap */
 
 article li.pending::after {
   content: "Project pending because it needs executive rights to be realized.";
