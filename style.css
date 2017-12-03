@@ -1,0 +1,128 @@
+/* Imports */
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css);
+
+/* Globals */
+
+:root {
+  font-size: 11px;
+}
+
+html {
+  background-color: whitesmoke;
+}
+
+/* Body */
+
+body {
+  margin: 20px auto;
+  max-width: 600px;
+  outline: 1px solid rgba(0, 0, 0, .1);
+  border: 1rem solid #EEE;
+  padding: 1rem;
+  background-color: white;
+  box-sizing: border-box;
+  font-family: tahoma, verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #999;
+  text-align: justify;
+}
+
+/* Header */
+
+body > header {
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+body > header p {
+  margin: 0;
+}
+
+body > header h1 {
+  letter-spacing: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.5rem;
+}
+
+/* Articles */
+
+article {
+  padding-bottom: 1rem;
+}
+
+article:not(:last-of-type) {
+  border-bottom: 1px solid #EEE;
+  margin-bottom: 3rem;
+}
+
+article h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: grey;
+}
+
+article ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+article li {
+  position: relative;
+  padding-left: 3rem;
+  padding-right: 1rem;
+}
+
+article li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+article li::before {
+  content: "■";
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  font-weight: bold;
+  color: grey;
+  margin-right: 1rem;
+}
+
+/* Progression & Roadmap */
+
+article progress {
+  width: 100%;
+  display: block;
+}
+
+article li.pending::after {
+  content: "Project pending because it needs executive rights to be realized.";
+  font-weight: bold;
+}
+
+article li.completed::before {
+  color: #2ba84a;
+}
+
+article li.completed::after {
+  content: "Project successfully achieved.";
+  font-weight: bold;
+  color: #2ba84a;
+}
+
+article li.progressing::before {
+  color: darkorange;
+}
+
+article li.progressing::after {
+  content: "Project in progress.";
+  color: darkorange;
+  font-weight: bold;
+}
