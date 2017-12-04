@@ -1,13 +1,13 @@
 /* Imports */
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css);
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 
 
 /* Globals */
 
 :root {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 html {
@@ -28,7 +28,7 @@ body {
   padding: 1rem;
   background-color: white;
   box-sizing: border-box;
-  font-family: 'Montserrat', tahoma, verdana, sans-serif;
+  font-family: "Montserrat", tahoma, verdana, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
   color: #555;
