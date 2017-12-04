@@ -107,7 +107,7 @@ article li::before {
     height: 1rem;
     border: 1px solid #EEE;
     border-radius: 1rem;
-    padding: 1px;
+    padding: 3px;
     box-sizing: border-box;
     margin-top: -5px;
 }
