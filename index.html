@@ -4,6 +4,8 @@
   <title>Werreales' Platform</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
 
@@ -21,7 +23,7 @@
   <article id="transparency">
     <h2>Transparency</h2>
     
-    <ul>
+    <ul class="roadmap">
       <li class="completed">
           <p>Legislation is necessarily in the public domain since it must be available to everyone, including judiciary institutions. However, our laws are very difficult to access because they are each published in different versions and in different factbooks, themselves from different nations. This excessive decentralization of our legislation calls into question its belonging to the public domain; it also weakens our judicial system. In order to guarantee transparency of the political process of our region, its democracy as well as its justice, it is essential that each one of us can freely access and consult the legislation easily.</p>
           <p>Centralizing New World Union legislation in a Legislative Journal is my solution to this problem. The Legislative Journal will be kept up-to-date by the Regional Government, under executive prerogatives granted to the Regional Government by the Constitution of New World Union. The Legislative Journal will constitute the new legislation on which the functioning of the institutions of our region rests.</p>
@@ -29,20 +31,21 @@
       </li>
     </ul>
     
-    <div class="progression">
-      <div class="progressbar"><span style="width: 33.33%"></span></div>
+    <aside class="progression">
+      <p class="score"></p>
+      <div class="progressbar"><span style="width: 30%"></span></div>
       <ul class="milestones">
-        <li><time>December 3, 2017</time> Creation of the Legislative Journal</li>
+        <li class="completed"><time>December 3, 2017</time> Creation of the Legislative Journal</li>
         <li><time>December 10, 2017</time> End of the Elections</li>
         <li><time>December 11, 2017</time> Invite the judiciary to use the new journal as a legislative basis</li>
       </ul>
-    </div>
+    </aside>
   </article>
 
   <article id="simplicity">
     <h2>Simplicity</h2>
     
-    <ul>
+    <ul class="roadmap">
       <li class="pending">
           <p>I note that the solution of two regional maps is doomed to failure. This solution is incompatible with our region for some obvious reasons. First: our region is based on a relatively fast pace of roleplay compared to other NationStates regions. Our region is used to numerous, short and reactive roleplays, with players able to respond within 30 minutes. However, the creation of a second map has slowed down this pace in our region, because it has imposed extra work time: maintenance of the card, creation of its background, maintenance of its roleplay, etc.</p>
           <p>The second reason is: New World Union is a relatively conservative region, to understand that the region wants to keep what works at home and that seems familiar. However, at the time, the creation of a second map by Razzgriz was somewhat an innovative idea for the region, so innovative that it unfortunately aroused very little interest.</p>
@@ -50,21 +53,21 @@
       </li>
     </ul>
     
-    <div class="progression">
-      <div class="progressbar"><span style="width: 1%"></span></div>
+    <aside class="progression">
+      <p class="score"></p>
+      <div class="progressbar"><span style="width: 0%"></span></div>
       <ul class="milestones">
         <li><time>December 10, 2017</time> End of the Elections</li>
-        <li><time>December 11, 2017</time> Writing a decree for a single map</li>
+        <li><time>December 11, 2017</time> Writing a decree that defines a single common map</li>
         <li><time>December 15, 2017</time> Publishing the decree in the Legislative Journal</li>
       </ul>
-    </div>
+    </aside>
   </article>
   
   <article id="stability">
     <h2>Stability</h2>
-    <p>Advancement of this principle:</p>
     
-    <ul>
+    <ul class="roadmap">
       <li class="pending">
         <p>In recent months, the region has experienced violent turmoil among many of its most influent players (honestly, I admit to being part of these players). These violent conflicts have tarnished the region and paralyzed it. Exceptional players like Gooutofhere have decided to leave the region in order to express their exhaust of this situation.</p>
         <p>In order to stabilize the region, and to allow it to heal the wounds of the past, it is essential to establish an intransigent order, capable of preventing future conflicts. Therefore, my solution to this scourge of our region is the creation of an intransigent order capable of preventing future conflicts between players, and if necessary to apply sanctions in case of serious disturbance to the stability of the region.</p>
@@ -72,18 +75,23 @@
       </li>
     </ul>
     
-    <div class="progression">
-      <div class="progressbar"><span style="width: 1%"></span></div>
+    <aside class="progression">
+      <p class="score"></p>
+      <div class="progressbar"><span style="width: 0%"></span></div>
       <ul class="milestones">
         <li><time>December 10, 2017</time> End of the Elections</li>
+        <li><time>December 11, 2017</time> Writing a law that will arm the Government and Justice with tools to fight against conflicts between players</li>
+        <li><time>December 11, 2017</time> Invite the judiciary to use the new journal as a legislative basis</li>
+        <li><time>December 18, 2017</time> Presenting the law to a regional referendum for 4 days</li>
+        <li><time>December 18, 2017</time> Creating a new Ministry for player relations
       </ul>
-    </div>
+    </aside>
   </article>
 
   <article id="community">
     <h2>Community</h2>
     
-    <ul>
+    <ul class="roadmap">
       <li class="pending">
         <p>In recent months, the region has experienced a significant decline in activity. The general bad atmosphere and the lack of simplicity are two factors that explain this decline, but there is also a lack of common vision. Indeed, until now, our habits consisted in the recurrent creation of small roleplays, rarely finalized and gathering at most only 4 or 5 active players. This overload of roleplays reflects a lack of global vision, that is, a roleplaying guideline that would guide our game. It also reflects a generalized boredom that we try to erase by the excessive addition of new roleplays, in turn abandoned.</p>
         <p>My solution to this problem is the occasional organization of regional events. These events would be similar to N-Day or Z-Day, but on a regional scale. Regional events are a good way to connect a community, while providing an interesting roleplaying line on which all members can participate. The selection of regional events would be by democratic vote, and their organization will be conceded to the Ministry of Roleplay. In order to increase the visibility of our region, and to guarantee a certain quality of roleplay, the events will be organized on the NationStates forum and will be supervised by a moderation team selected by the Minister of Roleplay.</p>
@@ -91,13 +99,18 @@
       </li>
     </ul>
     
-    <div class="progression">
-      <div class="progressbar"><span style="width: 1%"></span></div>
+    <aside class="progression">
+      <p class="score"></p>
+      <div class="progressbar"><span style="width: 0%"></span></div>
       <ul class="milestones">
         <li><time>December 10, 2017</time> End of the Elections</li>
+        <li><time>December 11, 2017</time> Creating a regional pool for 4 days where people can choose different scenarios for the End of the Year Event<li>
+        <li><time>December 15, 2017</time> Starting the prep for the event</li>
+        <li><time>December 18, 2017</time> Creating a OOC topic for the End of the Year Event in NS Forums</li>
+        <li><time>December 24, 2017</time> Starting the End of the Year Event</li>
       </ul>
     </div>
-  </article>
+  </aside>
 
 </body>
 </html>
